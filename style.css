@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-item a,
+a:visited,
+a:active{
+    text-decoration: none;
+    color: black;
+    margin: 1em;
+    padding: 10px;
+    border: black 1px solid;
+}
