@@ -4,18 +4,57 @@
     box-sizing: border-box;
 }
 
+/* INDEX PAGE STYLING */
+
 header nav ul {
     display: flex;
     list-style: none;
     justify-content: center;
 }
 
+header nav ul li {
+    padding: 7px;
+}
+
 .nav-item a,
-a:visited,
-a:active{
+.nav-item a:visited,
+.nav-item a:active {
     text-decoration: none;
     color: black;
     margin: 1em;
-    padding: 10px;
     border: black 1px solid;
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+.introduction-container {
+    display: block;
+    border: solid 1px black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding: 1em 1em;
+    position: relative;
+    top: 150px;;
+}
+
+.introduction-container h1 {
+    padding-bottom: 1em;
+}
+
+.index-background {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 160px;
+    z-index: -1;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
 }
